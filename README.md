@@ -21,7 +21,17 @@ All components can be access via named exports on the `starstuff-components` pac
 ### Hyperbutton
 
 ```js
-import {Hyperbutton} from "starstuff-componets";
+import { Hyperbutton } from "starstuff-components";
 
-const HyperbuttonExample = () => <Hyperbutton href="#">Test Hyperbutton</HyperButton>
+const HyperbuttonExample = () => (
+  <Hyperbutton href="#">Test Hyperbutton</Hyperbutton>
+);
+```
+
+### Hyperlink
+
+```js
+import { Hyperlink } from "starstuff-components";
+
+const HyperlinkExample = () => <Hyperlink href="#">Test Hyperlink</Hyperlink>;
 ```
