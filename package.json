@@ -1,0 +1,55 @@
+{
+  "name": "starstuff-components",
+  "version": "0.0.0-development",
+  "description": "Minimalistic React Component Library",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prerelease": "tsc",
+    "test": "jest",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keplersj/starstuff-components.git"
+  },
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "author": "Kepler Sticka-Jones <kepler@stickajones.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keplersj/starstuff-components/issues"
+  },
+  "homepage": "https://github.com/keplersj/starstuff-components#readme",
+  "devDependencies": {
+    "@stryker-mutator/core": "^2.1.0",
+    "@stryker-mutator/html-reporter": "^2.1.0",
+    "@stryker-mutator/jest-runner": "^2.1.0",
+    "@stryker-mutator/typescript": "^2.1.0",
+    "@types/jest": "^24.0.18",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-test-renderer": "^16.9.0",
+    "docz": "^2.0.0-rc.41",
+    "jest": "^24.9.0",
+    "jest-emotion": "^10.0.17",
+    "jest-runner-prettier": "^0.3.1",
+    "prettier": "^1.18.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-test-renderer": "^16.9.0",
+    "semantic-release": "^15.13.24",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "@emotion/styled": "^10.0.17"
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16"
+  }
+}
