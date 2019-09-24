@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "prerelease": "tsc",
+    "prepack": "tsc",
     "test": "jest",
     "docz:dev": "docz dev",
     "docz:build": "docz build"
