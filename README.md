@@ -18,6 +18,14 @@ npm install starstuff-components
 
 All components can be access via named exports on the `starstuff-components` package. Detailed examples for each component can be seen below.
 
+### Card
+
+```js
+import { Card } from "starstuff-components";
+
+const CardExample = () => <Card />;
+```
+
 ### Hyperbutton
 
 ```js

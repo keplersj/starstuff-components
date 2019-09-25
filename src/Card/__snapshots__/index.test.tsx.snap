@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card basic usage renders correctly 1`] = `
+.emotion-0:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+<div
+  className="emotion-0"
+>
+  <h2>
+    Test
+  </h2>
+</div>
+`;
+
+exports[`Card with a custom link renders correctly 1`] = `
+.emotion-0:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+<div
+  className="emotion-0"
+>
+  <span>
+    [
+    Test
+    ](
+    #
+    )
+  </span>
+</div>
+`;
+
+exports[`Card with a location renders correctly 1`] = `
+.emotion-0:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+<div
+  className="emotion-0"
+>
+  <a
+    href="#"
+  >
+    <h2>
+      Test
+    </h2>
+  </a>
+</div>
+`;
+
+exports[`Card with supporting content (in component form) renders correctly 1`] = `
+.emotion-0:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+<div
+  className="emotion-0"
+>
+  <h2>
+    Test
+  </h2>
+  <div>
+    <span>
+      Hello
+    </span>
+     
+    <span>
+      world
+    </span>
+    !
+  </div>
+</div>
+`;
+
+exports[`Card with supporting content (in string form) renders correctly 1`] = `
+.emotion-0:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+<div
+  className="emotion-0"
+>
+  <h2>
+    Test
+  </h2>
+  Supporting Content
+</div>
+`;

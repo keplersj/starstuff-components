@@ -1,0 +1,29 @@
+---
+name: Card
+route: /card
+---
+
+import { Playground, Props } from "docz";
+import { Card } from ".";
+
+# Card
+
+The Card allows for the effectively listing of items. Based off the [Material Design Card](https://material.io/components/cards/), and developed for building blogs and portfolios.
+
+## Props
+
+<Props of={Card} />
+
+## Usage
+
+<Playground>
+  <Card
+    title="Test Card"
+    supporting="This is a test of the card element in the Starstuff Components Library"
+  />
+  <Card
+    title="Linked Card"
+    location="#"
+    supporting="This is a test of the card element in the Starstuff Components Library, with a link."
+  />
+</Playground>
