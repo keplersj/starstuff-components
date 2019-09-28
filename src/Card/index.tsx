@@ -36,10 +36,11 @@ interface Props {
   location?: string;
   customLinkComponent?: (title: string, location: string) => React.ReactElement;
   supporting?: string | React.ReactElement;
+  className?: string;
 }
 
 export const Card = (props: Props) => (
-  <Container>
+  <Container className={props.className}>
     <Title
       location={props.location}
       customLinkComponent={props.customLinkComponent}
