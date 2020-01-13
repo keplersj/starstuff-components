@@ -1,18 +1,17 @@
 import styled from "@emotion/styled";
 
 export const Hyperlink = styled.a`
-  text-decoration: none;
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.5);
+  --starstuff-hyperlink-default-color: 0, 0, 0;
 
-  :hover {
-    box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.7);
+  @media screen and (prefers-color-scheme: dark) {
+    --starstuff-hyperlink-default-color: 255, 255, 255;
   }
 
-  @media (prefers-color-scheme: dark) {
-    box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  color: var(--starstuff-hyperlink-default-color);
+  box-shadow: inset 0 -1px 0 0 rgba(var(--starstuff-hyperlink-default-color), 0.5);
 
-    :hover {
-      box-shadow: inset 0 -2px 0 0 rgba(255, 255, 255, 0.7);
-    }
+  :hover {
+    box-shadow: inset 0 -2px 0 0 rgba(var(--starstuff-hyperlink-default-color), 0.7);
   }
 `;
