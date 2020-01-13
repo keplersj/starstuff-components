@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { lighten, darken } from "polished";
 
 export const Hyperbutton = styled.a`
   -moz-appearance: none;
@@ -27,21 +28,27 @@ export const Hyperbutton = styled.a`
 
   /* outline: none; */
 
-  :hover {
-    background-color: #f9f9f9;
+  color: #000000;
+
+  :hover,
+  :focus {
+    background-color: ${darken(160 / 255, "#ffffff")};
   }
 
   :active {
-    background-color: #f2f2f2;
+    background-color: ${darken(200 / 255, "#ffffff")};
   }
 
   @media (prefers-color-scheme: dark) {
-    :hover {
-      background-color: #606060;
+    color: #ffffff;
+
+    :hover,
+    :focus {
+      background-color: ${lighten(160 / 255, "#000000")};
     }
 
     :active {
-      background-color: #d0d0d0;
+      background-color: ${lighten(200 / 255, "#000000")};
     }
   }
 `;

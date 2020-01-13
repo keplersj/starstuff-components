@@ -35,23 +35,30 @@ exports[`Hyperbutton renders correctly 1`] = `
   white-space: nowrap;
   border-color: transparent;
   font-size: 1.5rem;
+  color: #000000;
 }
 
-.emotion-0:hover {
-  background-color: #f9f9f9;
+.emotion-0:hover,
+.emotion-0:focus {
+  background-color: #5f5f5f;
 }
 
 .emotion-0:active {
-  background-color: #f2f2f2;
+  background-color: #373737;
 }
 
 @media (prefers-color-scheme:dark) {
-  .emotion-0:hover {
-    background-color: #606060;
+  .emotion-0 {
+    color: #ffffff;
+  }
+
+  .emotion-0:hover,
+  .emotion-0:focus {
+    background-color: #a0a0a0;
   }
 
   .emotion-0:active {
-    background-color: #d0d0d0;
+    background-color: #c8c8c8;
   }
 }
 
