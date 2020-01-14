@@ -1,90 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card basic usage renders correctly 1`] = `
-.emotion-0:not(:last-child) {
-  margin-bottom: 1.5rem;
+.emotion-0 {
+  --starstuff-card-default-background-color: 245,245,245;
+  --starstuff-card-default-shadow-color: 10,10,10;
+  border-radius: 10px;
+  margin: 1em;
+  background-color: rgba(var(--starstuff-card-default-background-color),0.5);
+  box-shadow: 0.5em 0.5em 0.75em rgba(var(--starstuff-card-default-shadow-color),0.3);
+}
+
+@media screen and (prefers-color-scheme:dark) {
+  .emotion-0 {
+    --starstuff-card-default-background-color: 40,40,40;
+    --starstuff-card-default-shadow-color: 20,20,20;
+  }
 }
 
 <div
   className="emotion-0"
 >
-  <h2>
-    Test
-  </h2>
-</div>
-`;
-
-exports[`Card with a custom link renders correctly 1`] = `
-.emotion-0:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
-<div
-  className="emotion-0"
->
-  <span>
-    [
-    Test
-    ](
-    #
-    )
-  </span>
-</div>
-`;
-
-exports[`Card with a location renders correctly 1`] = `
-.emotion-0:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
-<div
-  className="emotion-0"
->
-  <a
-    href="#"
-  >
-    <h2>
-      Test
-    </h2>
-  </a>
-</div>
-`;
-
-exports[`Card with supporting content (in component form) renders correctly 1`] = `
-.emotion-0:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
-<div
-  className="emotion-0"
->
-  <h2>
-    Test
-  </h2>
-  <div>
-    <span>
-      Hello
-    </span>
-     
-    <span>
-      world
-    </span>
-    !
-  </div>
-</div>
-`;
-
-exports[`Card with supporting content (in string form) renders correctly 1`] = `
-.emotion-0:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
-<div
-  className="emotion-0"
->
-  <h2>
-    Test
-  </h2>
-  Supporting Content
+  <h1>
+    Test Card
+  </h1>
+  <p>
+    This is an an example of the Card component.
+  </p>
 </div>
 `;

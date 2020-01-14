@@ -5,23 +5,84 @@ route: /card
 
 import { Playground, Props } from "docz";
 import { Card } from ".";
+import { Hyperlink } from "../Hyperlink";
 
 # Card
 
 The Card allows for the effectively listing of items. Based off the [Material Design Card](https://material.io/components/cards/), and developed for building blogs and portfolios.
 
-## Usage
+## Basic Usage
+
+The Card provides base styling for a distinct item. Below is an example with a simple block of text:
 
 <Playground>
-  <Card
-    title="Test Card"
-    supporting="This is a test of the card element in the Starstuff Components Library"
-  />
-  <Card
-    title="Linked Card"
-    location="#"
-    supporting="This is a test of the card element in the Starstuff Components Library, with a link."
-  />
+  <Card>
+    <h1>Test Card</h1>
+    <p>This is a very basic example of the card component.</p>
+  </Card>
+</Playground>
+
+## Advanced Usage
+
+Because `<Card/>` only provides base styling, complex views can be easily constructed using the children of the component. Below is an example of the card being using to display an example blog post (in both horizontal and vertical orientations):
+
+<Playground>
+  <Card style={{ width: "25vw" }}>
+    <a href="#">
+      <img
+        style={{
+          width: "100%",
+          height: "100%",
+          borderTopLeftRadius: "10px",
+          borderTopRightRadius: "10px"
+        }}
+        src="/public/IMG_20170915_092012.jpg"
+        alt="Salt Lake City on a Rainy Day"
+      />
+    </a>
+    <div style={{ padding: "0.5em", paddingTop: "0" }}>
+      <Hyperlink href="#">
+        <h3>Example Blog Post</h3>
+      </Hyperlink>
+      <p>
+        Lorem ea aliqua laborum quis commodo veniam non aute. Non anim id
+        laboris deserunt ad duis ullamco consequat pariatur nostrud ipsum anim…
+      </p>
+      <Hyperlink href="#">Read More...</Hyperlink>
+    </div>
+  </Card>
+  <Card style={{ display: "flex" }}>
+    <a href="#">
+      <img
+        style={{
+          width: "100%",
+          height: "100%",
+          borderTopLeftRadius: "10px",
+          borderBottomLeftRadius: "10px"
+        }}
+        src="/public/IMG_20170915_092012.jpg"
+        alt="Salt Lake City on a Rainy Day"
+      />
+    </a>
+    <div
+      style={{
+        padding: "0.5em",
+        paddingTop: "0",
+        minWidth: "67%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center"
+      }}
+    >
+      <Hyperlink href="#">
+        <h3>Example Blog Post</h3>
+      </Hyperlink>
+      <p>
+        Lorem ea aliqua laborum quis commodo veniam non aute. Non anim id
+        laboris deserunt ad duis ullamco consequat pariatur nostrud ipsum anim…
+      </p>
+    </div>
+  </Card>
 </Playground>
 
 ## Props
