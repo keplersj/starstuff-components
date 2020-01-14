@@ -28,3 +28,32 @@ exports[`Card basic usage renders correctly 1`] = `
   </p>
 </div>
 `;
+
+exports[`Card basic usage renders correctly 2`] = `
+.emotion-0 {
+  --starstuff-card-default-background-color: 245,245,245;
+  --starstuff-card-default-shadow-color: 10,10,10;
+  border-radius: 10px;
+  margin: 1em;
+  background-color: rgba(var(--starstuff-card-default-background-color),0.5);
+  box-shadow: 0.5em 0.5em 0.75em rgba(var(--starstuff-card-default-shadow-color),0.3);
+}
+
+@media screen and (prefers-color-scheme:dark) {
+  .emotion-0 {
+    --starstuff-card-default-background-color: 40,40,40;
+    --starstuff-card-default-shadow-color: 20,20,20;
+  }
+}
+
+<article
+  className="emotion-0"
+>
+  <h1>
+    I'm an article!
+  </h1>
+  <p>
+    *Ralphie Wiggum impersonation*
+  </p>
+</article>
+`;

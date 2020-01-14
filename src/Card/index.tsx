@@ -1,7 +1,6 @@
-import * as React from "react";
 import styled from "@emotion/styled";
 
-const Container = styled.div`
+export const Card = styled.div`
   --starstuff-card-default-background-color: 245, 245, 245;
   --starstuff-card-default-shadow-color: 10, 10, 10;
 
@@ -16,12 +15,3 @@ const Container = styled.div`
   box-shadow: 0.5em 0.5em 0.75em
     rgba(var(--starstuff-card-default-shadow-color), 0.3);
 `;
-
-interface Props {}
-
-export const Card = ({
-  children,
-  ...props
-}: React.PropsWithChildren<Props>) => (
-  <Container {...props}>{children}</Container>
-);

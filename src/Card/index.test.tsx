@@ -16,4 +16,20 @@ describe("Card", () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe("basic usage", () => {
+    it("renders correctly", () => {
+      const CustomCard = Card.withComponent("article");
+
+      const tree = renderer
+        .create(
+          <CustomCard>
+            <h1>I'm an article!</h1>
+            <p>*Ralphie Wiggum impersonation*</p>
+          </CustomCard>
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
