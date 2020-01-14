@@ -3,8 +3,7 @@ const testPathIgnorePatterns = [
   "/dist/",
   "/.docz/",
   "/coverage/",
-  "/reports/",
-  "/src/Card/Card.mdx" //Sadly something in prettier's parsing is breaking here.
+  "/reports/"
 ];
 
 module.exports = {
