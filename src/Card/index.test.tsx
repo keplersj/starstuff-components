@@ -24,7 +24,7 @@ describe("Card", () => {
       const tree = renderer
         .create(
           <CustomCard>
-            <h1>I'm an article!</h1>
+            <h1>{"I'm an article!"}</h1>
             <p>*Ralphie Wiggum impersonation*</p>
           </CustomCard>
         )
