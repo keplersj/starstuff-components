@@ -20,6 +20,11 @@ module.exports = {
       displayName: "lint:prettier",
       preset: "jest-runner-prettier",
       testPathIgnorePatterns
+    },
+    {
+      displayName: "lint:stylelint",
+      preset: "jest-runner-stylelint",
+      testPathIgnorePatterns
     }
   ]
 };

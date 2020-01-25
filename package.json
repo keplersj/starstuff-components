@@ -37,11 +37,14 @@
     "jest": "^24.9.0",
     "jest-emotion": "^10.0.17",
     "jest-runner-prettier": "^0.3.1",
+    "jest-runner-stylelint": "^2.2.3",
     "prettier": "github:prettier/prettier",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-test-renderer": "^16.9.0",
     "semantic-release": "^16.0.0",
+    "stylelint": "^13.0.0",
+    "stylelint-config-starstuff": "^1.0.7",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.3"
   },
@@ -52,5 +55,10 @@
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16"
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-starstuff/css-in-js"
+    ]
   }
 }

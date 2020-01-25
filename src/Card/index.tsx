@@ -1,13 +1,6 @@
 import styled from "@emotion/styled";
 
 export const Card = styled.div`
-  --starstuff-card-default-background-color: 245, 245, 245;
-  --starstuff-card-default-shadow-color: 10, 10, 10;
-
-  @media screen and (prefers-color-scheme: dark) {
-    --starstuff-card-default-background-color: 55, 55, 55;
-  }
-
   border-radius: 10px;
   margin: 1em;
   background-color: rgba(var(--starstuff-card-default-background-color), 0.5);
@@ -21,5 +14,12 @@ export const Card = styled.div`
   :hover {
     box-shadow: 0.8em 0.8em 1em
       rgba(var(--starstuff-card-default-shadow-color), 0.4);
+  }
+
+  --starstuff-card-default-background-color: 245, 245, 245;
+  --starstuff-card-default-shadow-color: 10, 10, 10;
+
+  @media screen and (prefers-color-scheme: dark) {
+    --starstuff-card-default-background-color: 55, 55, 55;
   }
 `;

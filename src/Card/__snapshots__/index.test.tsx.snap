@@ -2,20 +2,14 @@
 
 exports[`Card basic usage renders correctly 1`] = `
 .emotion-0 {
-  --starstuff-card-default-background-color: 245,245,245;
-  --starstuff-card-default-shadow-color: 10,10,10;
   border-radius: 10px;
   margin: 1em;
   background-color: rgba(var(--starstuff-card-default-background-color),0.5);
   box-shadow: 0.5em 0.5em 0.75em rgba(var(--starstuff-card-default-shadow-color),0.3);
   -webkit-transition: box-shadow 1s;
   transition: box-shadow 1s;
-}
-
-@media screen and (prefers-color-scheme:dark) {
-  .emotion-0 {
-    --starstuff-card-default-background-color: 55,55,55;
-  }
+  --starstuff-card-default-background-color: 245,245,245;
+  --starstuff-card-default-shadow-color: 10,10,10;
 }
 
 .emotion-0:active,
@@ -23,6 +17,12 @@ exports[`Card basic usage renders correctly 1`] = `
 .emotion-0:focus-within,
 .emotion-0:hover {
   box-shadow: 0.8em 0.8em 1em rgba(var(--starstuff-card-default-shadow-color),0.4);
+}
+
+@media screen and (prefers-color-scheme:dark) {
+  .emotion-0 {
+    --starstuff-card-default-background-color: 55,55,55;
+  }
 }
 
 <div
@@ -39,20 +39,14 @@ exports[`Card basic usage renders correctly 1`] = `
 
 exports[`Card basic usage renders correctly 2`] = `
 .emotion-0 {
-  --starstuff-card-default-background-color: 245,245,245;
-  --starstuff-card-default-shadow-color: 10,10,10;
   border-radius: 10px;
   margin: 1em;
   background-color: rgba(var(--starstuff-card-default-background-color),0.5);
   box-shadow: 0.5em 0.5em 0.75em rgba(var(--starstuff-card-default-shadow-color),0.3);
   -webkit-transition: box-shadow 1s;
   transition: box-shadow 1s;
-}
-
-@media screen and (prefers-color-scheme:dark) {
-  .emotion-0 {
-    --starstuff-card-default-background-color: 55,55,55;
-  }
+  --starstuff-card-default-background-color: 245,245,245;
+  --starstuff-card-default-shadow-color: 10,10,10;
 }
 
 .emotion-0:active,
@@ -60,6 +54,12 @@ exports[`Card basic usage renders correctly 2`] = `
 .emotion-0:focus-within,
 .emotion-0:hover {
   box-shadow: 0.8em 0.8em 1em rgba(var(--starstuff-card-default-shadow-color),0.4);
+}
+
+@media screen and (prefers-color-scheme:dark) {
+  .emotion-0 {
+    --starstuff-card-default-background-color: 55,55,55;
+  }
 }
 
 <article

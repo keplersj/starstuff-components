@@ -28,7 +28,7 @@ export const Hyperbutton = styled.a`
 
   /* outline: none; */
 
-  color: #000000;
+  color: #000;
 
   :hover,
   :focus {
@@ -40,7 +40,7 @@ export const Hyperbutton = styled.a`
   }
 
   @media (prefers-color-scheme: dark) {
-    color: #ffffff;
+    color: #fff;
 
     :hover,
     :focus {
