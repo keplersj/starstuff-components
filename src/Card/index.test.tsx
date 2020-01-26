@@ -17,7 +17,7 @@ describe("Card", () => {
     });
   });
 
-  describe("basic usage", () => {
+  describe("with customized component", () => {
     it("renders correctly", () => {
       const CustomCard = Card.withComponent("article");
 
