@@ -2,33 +2,36 @@ import styled from "@emotion/styled";
 import { lighten, darken } from "polished";
 
 export const Hyperbutton = styled.a`
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  align-items: center;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  box-shadow: none;
-  display: inline-flex;
-  height: 2.25em;
-  line-height: 1.5;
   position: relative;
-  vertical-align: top;
-  text-decoration: none;
-  border-width: 1px;
-  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
+  height: 2.25em;
+  padding-top: calc(0.375em - 1px);
+  padding-right: 0.75em;
   padding-bottom: calc(0.375em - 1px);
   padding-left: 0.75em;
-  padding-right: 0.75em;
-  padding-top: calc(0.375em - 1px);
-  text-align: center;
-  white-space: nowrap;
-  border-color: transparent;
-  font-size: 1.5rem;
 
   /* outline: none; */
 
   color: #000;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+
+  border: 1px solid transparent;
+  border-color: transparent;
+  border-width: 1px;
+  border-radius: 4px;
+  box-shadow: none;
+  cursor: pointer;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
 
   :hover,
   :focus {
