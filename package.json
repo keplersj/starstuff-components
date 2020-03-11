@@ -26,7 +26,7 @@
   "homepage": "https://github.com/keplersj/starstuff-components#readme",
   "devDependencies": {
     "@stryker-mutator/core": "^2.1.0",
-    "@stryker-mutator/html-reporter": "^2.1.0",
+    "@stryker-mutator/html-reporter": "^3.0.0",
     "@stryker-mutator/jest-runner": "^3.0.0",
     "@stryker-mutator/typescript": "^3.0.0",
     "@types/jest": "^25.1.0",
