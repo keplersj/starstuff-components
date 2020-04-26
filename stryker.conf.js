@@ -1,12 +1,12 @@
 const path = require("path");
 
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
     mutate: [
       "src/**/*.ts?(x)",
       "!src/**/*@(.test|.spec|Spec).ts?(x)",
       "!src/**/*@(.stories).ts?(x)",
-      "!src/__mocks__/**/*.ts?(x)"
+      "!src/__mocks__/**/*.ts?(x)",
     ],
     mutator: "typescript",
     testRunner: "jest",
@@ -16,7 +16,7 @@ module.exports = function(config) {
       projectType: "custom",
       // Only use the unit test project
       config: require(path.resolve(__dirname, "./jest.config.js")).projects[0],
-      enableFindRelatedTests: true
-    }
+      enableFindRelatedTests: true,
+    },
   });
 };

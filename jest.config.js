@@ -3,7 +3,7 @@ const testPathIgnorePatterns = [
   "/dist/",
   "/.docz/",
   "/coverage/",
-  "/reports/"
+  "/reports/",
 ];
 
 module.exports = {
@@ -14,17 +14,17 @@ module.exports = {
       preset: "ts-jest",
       snapshotSerializers: ["jest-emotion"],
       testPathIgnorePatterns,
-      collectCoverage: true
+      collectCoverage: true,
     },
     {
       displayName: "lint:prettier",
       preset: "jest-runner-prettier",
-      testPathIgnorePatterns
+      testPathIgnorePatterns,
     },
     {
       displayName: "lint:stylelint",
       preset: "jest-runner-stylelint",
-      testPathIgnorePatterns
+      testPathIgnorePatterns,
     },
     {
       runner: "eslint",
@@ -32,8 +32,8 @@ module.exports = {
       testMatch: [
         "<rootDir>/src/**/*.js",
         "<rootDir>/src/**/*.ts",
-        "<rootDir>/src/**/*.tsx"
-      ]
-    }
-  ]
+        "<rootDir>/src/**/*.tsx",
+      ],
+    },
+  ],
 };
