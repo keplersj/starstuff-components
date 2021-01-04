@@ -12,8 +12,8 @@ exports[`Hyperbutton renders correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   height: 2.25em;
   padding-top: calc(0.375em - 1px);
@@ -47,7 +47,7 @@ exports[`Hyperbutton renders correctly 1`] = `
   background-color: #373737;
 }
 
-@media (prefers-color-scheme:dark) {
+@media (prefers-color-scheme: dark) {
   .emotion-0 {
     color: #fff;
   }

@@ -12,7 +12,7 @@ module.exports = {
     {
       displayName: "test",
       preset: "ts-jest",
-      snapshotSerializers: ["jest-emotion"],
+      snapshotSerializers: ["@emotion/jest/serializer"],
       testPathIgnorePatterns,
       collectCoverage: true,
     },
