@@ -1,10 +1,9 @@
----
-name: Hyperlink
-route: /hyperlink
----
-
-import { Playground, Props } from "docz";
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
 import { Hyperlink } from ".";
+
+<Meta title="Hyperlink" component={Hyperlink} />
+
+export const Template = (args) => <Hyperlink {...args} />;
 
 # Hyperlink
 
@@ -12,10 +11,10 @@ The Hyperlink component is a plain ol' anchor hyperlink, with some nice styling 
 
 ## Basic Usage
 
-<Playground>
+<Canvas>
   <Hyperlink href="#">Test</Hyperlink>
-</Playground>
+</Canvas>
 
 ## Props
 
-<Props of={Hyperlink} />
+<ArgsTable of={Hyperlink} />

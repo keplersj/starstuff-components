@@ -1,11 +1,10 @@
----
-name: Card
-route: /card
----
-
-import { Playground, Props } from "docz";
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
 import { Card } from ".";
 import { Hyperlink } from "../Hyperlink";
+
+<Meta title="Card" component={Card} />
+
+export const Template = (args) => <Card {...args} />;
 
 # Card
 
@@ -15,18 +14,18 @@ The Card allows for the effectively listing of items. Based off the [Material De
 
 The Card provides base styling for a distinct item. Below is an example with a simple block of text:
 
-<Playground>
+<Canvas>
   <Card>
     <h1>Test Card</h1>
     <p>This is a very basic example of the card component.</p>
   </Card>
-</Playground>
+</Canvas>
 
 ## Advanced Usage
 
 Because `<Card/>` only provides base styling, complex views can be easily constructed using the children of the component. Below is an example of the card being using to display an example blog post (in both horizontal and vertical orientations):
 
-<Playground>
+<Canvas>
   <Card style={{ width: "25vw" }}>
     <a href="#">
       <img
@@ -36,7 +35,7 @@ Because `<Card/>` only provides base styling, complex views can be easily constr
           borderTopLeftRadius: "10px",
           borderTopRightRadius: "10px",
         }}
-        src="/public/IMG_20170915_092012.jpg"
+        src="/IMG_20170915_092012.jpg"
         alt="Salt Lake City on a Rainy Day"
       />
     </a>
@@ -51,6 +50,9 @@ Because `<Card/>` only provides base styling, complex views can be easily constr
       <Hyperlink href="#">Read More...</Hyperlink>
     </div>
   </Card>
+</Canvas>
+
+<Canvas>
   <Card style={{ display: "flex" }}>
     <a href="#">
       <img
@@ -60,7 +62,7 @@ Because `<Card/>` only provides base styling, complex views can be easily constr
           borderTopLeftRadius: "10px",
           borderBottomLeftRadius: "10px",
         }}
-        src="/public/IMG_20170915_092012.jpg"
+        src="/IMG_20170915_092012.jpg"
         alt="Salt Lake City on a Rainy Day"
       />
     </a>
@@ -83,8 +85,8 @@ Because `<Card/>` only provides base styling, complex views can be easily constr
       </p>
     </div>
   </Card>
-</Playground>
+</Canvas>
 
 ## Props
 
-<Props of={Card} />
+<ArgsTable of={Card} />
