@@ -11,10 +11,18 @@ module.exports = {
   projects: [
     {
       displayName: "test",
-      preset: "ts-jest",
+      preset: "ts-jest/presets/default-esm",
       snapshotSerializers: ["@emotion/jest/serializer"],
       testPathIgnorePatterns,
       collectCoverage: true,
+      globals: {
+        "ts-jest": {
+          useESM: true,
+        },
+      },
+      moduleNameMapper: {
+        "^(\\.{1,2}/.*)\\.js$": "$1",
+      },
     },
     {
       displayName: "lint:prettier",

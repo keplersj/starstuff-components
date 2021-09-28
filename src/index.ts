@@ -1,3 +1,3 @@
-export { Card } from "./Card";
-export { Hyperbutton } from "./Hyperbutton";
-export { Hyperlink } from "./Hyperlink";
+export { Card } from "./Card/index.js";
+export { Hyperbutton } from "./Hyperbutton/index.js";
+export { Hyperlink } from "./Hyperlink/index.js";

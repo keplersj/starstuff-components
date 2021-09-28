@@ -3,7 +3,7 @@
  */
 
 import * as React from "react";
-import renderer from "react-test-renderer";
+import * as renderer from "react-test-renderer";
 import { Hyperlink } from ".";
 
 describe("Hyperlink", (): void => {
