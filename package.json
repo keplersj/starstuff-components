@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/keplersj/starstuff-components#readme",
   "devDependencies": {
-    "@babel/core": "7.15.5",
+    "@babel/core": "7.15.8",
     "@emotion/jest": "11.3.0",
     "@storybook/addon-actions": "6.3.10",
     "@storybook/addon-docs": "6.3.10",
