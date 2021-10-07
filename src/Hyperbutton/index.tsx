@@ -1,7 +1,17 @@
-import styled from "@emotion/styled";
+import { c, css } from "atomico";
 import { lighten, darken } from "polished";
 
-export const Hyperbutton = styled.a`
+function hyperbutton(): HTMLElement {
+  return (
+    <host shadowDom>
+      <slot>
+        <a></a>
+      </slot>
+    </host>
+  );
+}
+
+hyperbutton.styles = css`
   position: relative;
 
   display: inline-flex;
@@ -55,3 +65,5 @@ export const Hyperbutton = styled.a`
     }
   }
 `;
+
+export const Hyperbutton = c(hyperbutton);

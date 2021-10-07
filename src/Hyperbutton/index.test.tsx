@@ -1,16 +1,14 @@
-/**
- * @jest-environment jsdom
- */
-
-import * as React from "react";
-import * as renderer from "react-test-renderer";
+import { fixture } from "atomico/test-dom";
 import { Hyperbutton } from ".";
 
+customElements.define("starstuff-hyperbutton", Hyperbutton);
+
 describe("Hyperbutton", (): void => {
-  it("renders correctly", (): void => {
-    const tree = renderer
-      .create(<Hyperbutton href="/test">Test Link</Hyperbutton>)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+  it("renders correctly", async (): Promise<void> => {
+    const element = fixture(<Hyperbutton href="/test">Test Link</Hyperbutton>);
+
+    await (element as any).updated;
+
+    expect(element).toMatchSnapshot();
   });
 });

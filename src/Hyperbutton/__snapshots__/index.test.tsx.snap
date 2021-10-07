@@ -1,71 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Hyperbutton renders correctly 1`] = `
-.emotion-0 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  height: 2.25em;
-  padding-top: calc(0.375em - 1px);
-  padding-right: 0.75em;
-  padding-bottom: calc(0.375em - 1px);
-  padding-left: 0.75em;
-  color: #000;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  white-space: nowrap;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  vertical-align: top;
-  border: 1px solid transparent;
-  border-color: transparent;
-  border-width: 1px;
-  border-radius: 4px;
-  box-shadow: none;
-  cursor: pointer;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
-
-.emotion-0:hover,
-.emotion-0:focus {
-  background-color: #5f5f5f;
-}
-
-.emotion-0:active {
-  background-color: #373737;
-}
-
-@media (prefers-color-scheme: dark) {
-  .emotion-0 {
-    color: #fff;
-  }
-
-  .emotion-0:hover,
-  .emotion-0:focus {
-    background-color: #a0a0a0;
-  }
-
-  .emotion-0:active {
-    background-color: #c8c8c8;
-  }
-}
-
-<a
-  className="emotion-0"
+<starstuff-hyperbutton
   href="/test"
 >
+  Mark {}
   Test Link
-</a>
+  Mark {}
+</starstuff-hyperbutton>
 `;
