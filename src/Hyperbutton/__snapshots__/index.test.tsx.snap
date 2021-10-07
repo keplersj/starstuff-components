@@ -2,10 +2,72 @@
 
 exports[`Hyperbutton renders correctly 1`] = `
 <starstuff-hyperbutton
+  data-testid="starstuff-hyperbutton-shadowdom"
   href="/test"
 >
   Mark {}
   Test Link
   Mark {}
 </starstuff-hyperbutton>
+`;
+
+exports[`Hyperbutton renders correctly 2`] = `
+<slot>
+  <a>
+  </a>
+</slot>
+<style>
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.25em;
+  padding-top: calc(0.375em - 1px);
+  padding-right: 0.75em;
+  padding-bottom: calc(0.375em - 1px);
+  padding-left: 0.75em;
+
+  /* outline: none; */
+
+  color: #000;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+
+  border: 1px solid transparent;
+  border-color: transparent;
+  border-width: 1px;
+  border-radius: 4px;
+  box-shadow: none;
+  cursor: pointer;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  :hover,
+  :focus {
+    background-color: #5f5f5f;
+  }
+
+  :active {
+    background-color: #373737;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: #fff;
+
+    :hover,
+    :focus {
+      background-color: #a0a0a0;
+    }
+
+    :active {
+      background-color: #c8c8c8;
+    }
+  }
+</style>
 `;
