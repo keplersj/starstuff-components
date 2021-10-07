@@ -30,11 +30,9 @@ hyperlink.styles = css`
     }
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    :host:hover,
-    :host:focus {
-      box-shadow: inset 0 -2px 0 0 rgba(var(--starstuff-hyperlink-default-color), 0.7);
-    }
+  :host:hover,
+  :host:focus {
+    box-shadow: inset 0 -2px 0 0 rgba(var(--starstuff-hyperlink-default-color), 0.7);
   }
 `;
 
