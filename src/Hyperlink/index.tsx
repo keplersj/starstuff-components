@@ -15,7 +15,8 @@ hyperlink.props = {
 };
 
 hyperlink.styles = css`
-  :host {
+  :host,
+  :host a {
     color: var(--starstuff-hyperlink-default-color);
     text-decoration: none;
 
@@ -25,13 +26,14 @@ hyperlink.styles = css`
   }
 
   @media screen and (prefers-color-scheme: dark) {
-    :host {
+    :host,
+    :host a {
       --starstuff-hyperlink-default-color: 255, 255, 255;
     }
   }
 
-  :host:hover,
-  :host:focus {
+  :host(:hover),
+  :host(:focus) {
     box-shadow: inset 0 -2px 0 0 rgba(var(--starstuff-hyperlink-default-color), 0.7);
   }
 `;
