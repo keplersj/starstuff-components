@@ -1,20 +1,17 @@
-import { c, css } from "atomico";
+import { c, css, Props } from "atomico";
 
 // const OldCard = styled.div``;
 function card(): HTMLElement {
   return (
     <host shadowDom>
-      <slot>
-        <div></div>
-      </slot>
+      <slot></slot>
     </host>
   );
 }
 
-card.props = {};
-
 card.styles = css`
   :host {
+    display: block;
     margin: 1em;
 
     background-color: rgba(var(--starstuff-card-default-background-color), 0.5);
@@ -32,10 +29,10 @@ card.styles = css`
     }
   }
 
-  :host:active,
-  :host:focus,
-  :host:focus-within,
-  :host:hover {
+  :host(:active),
+  :host(:focus),
+  :host(:focus-within),
+  :host(:hover) {
     box-shadow: 0.8em 0.8em 1em
       rgba(var(--starstuff-card-default-shadow-color), 0.4);
   }
