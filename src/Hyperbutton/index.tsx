@@ -1,18 +1,23 @@
-import { c, css } from "atomico";
+import { c, css, Props } from "atomico";
 import { lighten, darken } from "polished";
 
-function hyperbutton(): HTMLElement {
+function hyperbutton(props: Props<typeof hyperbutton.props>): HTMLElement {
   return (
     <host shadowDom>
-      <slot>
-        <a></a>
-      </slot>
+      <a href={props.href}>
+        <slot></slot>
+      </a>
     </host>
   );
 }
 
+hyperbutton.props = {
+  href: String,
+};
+
 hyperbutton.styles = css`
-  :host {
+  :host,
+  :host a {
     position: relative;
 
     display: inline-flex;
@@ -45,26 +50,27 @@ hyperbutton.styles = css`
     -webkit-appearance: none;
   }
 
-  :host:hover,
-  :host:focus {
+  :host(:hover),
+  :host(:focus) {
     background-color: ${darken(160 / 255, "#ffffff")};
   }
 
-  :host:active {
+  :host(:active) {
     background-color: ${darken(200 / 255, "#ffffff")};
   }
 
   @media (prefers-color-scheme: dark) {
-    :host {
+    :host,
+    :host a {
       color: #fff;
     }
 
-    :host:hover,
-    :host:focus {
+    :host(:hover),
+    :host(:focus) {
       background-color: ${lighten(160 / 255, "#000000")};
     }
 
-    :host:active {
+    :host(:active) {
       background-color: ${lighten(200 / 255, "#000000")};
     }
   }
