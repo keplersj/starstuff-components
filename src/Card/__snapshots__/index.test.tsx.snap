@@ -21,11 +21,10 @@ exports[`Card basic usage renders correctly 1`] = `
 
 exports[`Card basic usage renders correctly 2`] = `
 <slot>
-  <div>
-  </div>
 </slot>
 <style>
   :host {
+    display: block;
     margin: 1em;
 
     background-color: rgba(var(--starstuff-card-default-background-color), 0.5);
@@ -43,10 +42,10 @@ exports[`Card basic usage renders correctly 2`] = `
     }
   }
 
-  :host:active,
-  :host:focus,
-  :host:focus-within,
-  :host:hover {
+  :host(:active),
+  :host(:focus),
+  :host(:focus-within),
+  :host(:hover) {
     box-shadow: 0.8em 0.8em 1em
       rgba(var(--starstuff-card-default-shadow-color), 0.4);
   }

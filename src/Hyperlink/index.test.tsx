@@ -1,8 +1,6 @@
 import { fixture } from "atomico/test-dom";
 import { Hyperlink } from ".";
 
-customElements.define("starstuff-hyperlink", Hyperlink);
-
 describe("Hyperlink", (): void => {
   it("shadow DOM renders correctly", async (): Promise<void> => {
     const element = fixture(

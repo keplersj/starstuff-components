@@ -1,10 +1,10 @@
 import { c, css, Props } from "atomico";
 import { lighten, darken } from "polished";
 
-function hyperbutton(props: Props<typeof hyperbutton.props>): HTMLElement {
+function hyperbutton(properties: Props<typeof hyperbutton.props>): HTMLElement {
   return (
     <host shadowDom>
-      <a href={props.href}>
+      <a href={properties.href}>
         <slot></slot>
       </a>
     </host>

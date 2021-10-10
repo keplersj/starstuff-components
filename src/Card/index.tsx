@@ -1,4 +1,4 @@
-import { c, css, Props } from "atomico";
+import { c, css } from "atomico";
 
 // const OldCard = styled.div``;
 function card(): HTMLElement {

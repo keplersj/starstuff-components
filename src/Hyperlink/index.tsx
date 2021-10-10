@@ -1,9 +1,9 @@
 import { c, css, Props } from "atomico";
 
-function hyperlink(props: Props<typeof hyperlink.props>): HTMLElement {
+function hyperlink(properties: Props<typeof hyperlink.props>): HTMLElement {
   return (
     <host shadowDom>
-      <a href={props.href}>
+      <a href={properties.href}>
         <slot></slot>
       </a>
     </host>

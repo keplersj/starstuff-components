@@ -12,12 +12,13 @@ exports[`Hyperbutton renders correctly 1`] = `
 `;
 
 exports[`Hyperbutton renders correctly 2`] = `
-<slot>
-  <a>
-  </a>
-</slot>
+<a href="/test">
+  <slot>
+  </slot>
+</a>
 <style>
-  :host {
+  :host,
+  :host a {
     position: relative;
 
     display: inline-flex;
@@ -50,26 +51,27 @@ exports[`Hyperbutton renders correctly 2`] = `
     -webkit-appearance: none;
   }
 
-  :host:hover,
-  :host:focus {
+  :host(:hover),
+  :host(:focus) {
     background-color: #5f5f5f;
   }
 
-  :host:active {
+  :host(:active) {
     background-color: #373737;
   }
 
   @media (prefers-color-scheme: dark) {
-    :host {
+    :host,
+    :host a {
       color: #fff;
     }
 
-    :host:hover,
-    :host:focus {
+    :host(:hover),
+    :host(:focus) {
       background-color: #a0a0a0;
     }
 
-    :host:active {
+    :host(:active) {
       background-color: #c8c8c8;
     }
   }

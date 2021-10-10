@@ -1,8 +1,6 @@
 import { fixture } from "atomico/test-dom";
 import { Card } from ".";
 
-customElements.define("starstuff-card", Card);
-
 describe("Card", () => {
   describe("basic usage", () => {
     it("renders correctly", async () => {
