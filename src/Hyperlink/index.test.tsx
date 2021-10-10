@@ -1,16 +1,21 @@
-/**
- * @jest-environment jsdom
- */
-
-import * as React from "react";
-import * as renderer from "react-test-renderer";
+import { fixture } from "atomico/test-dom";
 import { Hyperlink } from ".";
 
 describe("Hyperlink", (): void => {
-  it("renders correctly", (): void => {
-    const tree = renderer
-      .create(<Hyperlink href="/test">Test Link</Hyperlink>)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+  it("shadow DOM renders correctly", async (): Promise<void> => {
+    const element = fixture(
+      <Hyperlink data-testid="starstuff-hyperlink-shadowdom" href="/test">
+        Test Link
+      </Hyperlink>
+    );
+
+    await (element as any).updated;
+
+    const queried = document.querySelector(
+      "[data-testid=starstuff-hyperlink-shadowdom]"
+    );
+
+    expect(queried).toMatchSnapshot();
+    expect(queried?.shadowRoot?.innerHTML).toMatchSnapshot();
   });
 });

@@ -12,7 +12,6 @@ module.exports = {
     {
       displayName: "test",
       preset: "ts-jest/presets/default-esm",
-      snapshotSerializers: ["@emotion/jest/serializer"],
       testPathIgnorePatterns,
       collectCoverage: true,
       globals: {
@@ -23,6 +22,8 @@ module.exports = {
       moduleNameMapper: {
         "^(\\.{1,2}/.*)\\.js$": "$1",
       },
+      testEnvironment: "jsdom",
+      snapshotSerializers: ["jest-serializer-html"],
     },
     {
       displayName: "lint:prettier",
