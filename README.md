@@ -1,6 +1,6 @@
 # Starstuff Components
 
-Minimalistic React Components Library
+Minimalistic Web Components Library
 
 ## Philosophy
 
@@ -22,26 +22,20 @@ All components can be access via named exports on the `starstuff-components` pac
 
 ### Card
 
-```js
-import { Card } from "starstuff-components";
-
-const CardExample = () => <Card />;
+```html
+<starstuff-card>
+  <!-- Card Content -->
+</starstuff-card>
 ```
 
 ### Hyperbutton
 
-```js
-import { Hyperbutton } from "starstuff-components";
-
-const HyperbuttonExample = () => (
-  <Hyperbutton href="#">Test Hyperbutton</Hyperbutton>
-);
+```html
+<starstuff-hyperbutton href="#">Test Hyperbutton</starstuff-hyperbutton>
 ```
 
 ### Hyperlink
 
-```js
-import { Hyperlink } from "starstuff-components";
-
-const HyperlinkExample = () => <Hyperlink href="#">Test Hyperlink</Hyperlink>;
+```html
+<starstuff-hyperlink href="#">Test Hyperlink</starstuff-hyperlink>;
 ```
