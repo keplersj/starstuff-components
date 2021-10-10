@@ -2,9 +2,9 @@ import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
 import { Card } from ".";
 import { Hyperlink } from "../Hyperlink";
 
-<Meta title="Card" component={Card} />
+<Meta title="Card" />
 
-export const Template = (args) => <Card {...args} />;
+export const Template = (args) => <starstuff-card {...args} />;
 
 # Card
 
@@ -15,10 +15,10 @@ The Card allows for the effectively listing of items. Based off the [Material De
 The Card provides base styling for a distinct item. Below is an example with a simple block of text:
 
 <Canvas>
-  <Card>
+  <starstuff-card>
     <h1>Test Card</h1>
     <p>This is a very basic example of the card component.</p>
-  </Card>
+  </starstuff-card>
 </Canvas>
 
 ## Advanced Usage
@@ -26,7 +26,7 @@ The Card provides base styling for a distinct item. Below is an example with a s
 Because `<Card/>` only provides base styling, complex views can be easily constructed using the children of the component. Below is an example of the card being using to display an example blog post (in both horizontal and vertical orientations):
 
 <Canvas>
-  <Card style={{ width: "25vw" }}>
+  <starstuff-card style={{ width: "25vw" }}>
     <a href="#">
       <img
         style={{
@@ -40,20 +40,20 @@ Because `<Card/>` only provides base styling, complex views can be easily constr
       />
     </a>
     <div style={{ padding: "0.5em", paddingTop: "0" }}>
-      <Hyperlink href="#">
+      <starstuff-hyperlink href="#">
         <h3>Example Blog Post</h3>
-      </Hyperlink>
+      </starstuff-hyperlink>
       <p>
         Lorem ea aliqua laborum quis commodo veniam non aute. Non anim id
         laboris deserunt ad duis ullamco consequat pariatur nostrud ipsum anim…
       </p>
-      <Hyperlink href="#">Read More...</Hyperlink>
+      <starstuff-hyperlink href="#">Read More...</starstuff-hyperlink>
     </div>
-  </Card>
+  </starstuff-card>
 </Canvas>
 
 <Canvas>
-  <Card style={{ display: "flex" }}>
+  <starstuff-card style={{ display: "flex" }}>
     <a href="#">
       <img
         style={{
@@ -76,17 +76,17 @@ Because `<Card/>` only provides base styling, complex views can be easily constr
         justifyContent: "center",
       }}
     >
-      <Hyperlink href="#">
+      <starstuff-hyperlink href="#">
         <h3>Example Blog Post</h3>
-      </Hyperlink>
+      </starstuff-hyperlink>
       <p>
         Lorem ea aliqua laborum quis commodo veniam non aute. Non anim id
         laboris deserunt ad duis ullamco consequat pariatur nostrud ipsum anim…
       </p>
     </div>
-  </Card>
+  </starstuff-card>
 </Canvas>
 
 ## Props
 
-<ArgsTable of={Card} />
+<!-- {/_ <ArgsTable of={Card} /> _/} -->

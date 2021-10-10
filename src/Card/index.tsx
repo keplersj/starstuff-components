@@ -48,3 +48,4 @@ card.styles = css`
 `;
 
 export const Card = c(card);
+customElements.define("starstuff-card", Card);

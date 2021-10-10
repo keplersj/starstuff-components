@@ -37,3 +37,4 @@ hyperlink.styles = css`
 `;
 
 export const Hyperlink = c(hyperlink);
+customElements.define("starstuff-hyperlink", Hyperlink);

@@ -71,3 +71,4 @@ hyperbutton.styles = css`
 `;
 
 export const Hyperbutton = c(hyperbutton);
+customElements.define("starstuff-hyperbutton", Hyperbutton);
