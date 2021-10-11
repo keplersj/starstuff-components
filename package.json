@@ -48,7 +48,7 @@
     "jest-serializer-html": "7.1.0",
     "prettier": "2.4.1",
     "semantic-release": "18.0.0",
-    "storybook-builder-vite": "0.1.0",
+    "storybook-builder-vite": "0.1.1",
     "stylelint": "13.13.1",
     "stylelint-config-starstuff": "1.1.7",
     "ts-jest": "27.0.5",
