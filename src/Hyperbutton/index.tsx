@@ -16,6 +16,10 @@ hyperbutton.props = {
 };
 
 hyperbutton.styles = css`
+  :host {
+    --starstuff-hyperbutton-color: 0, 0, 0;
+  }
+
   :host,
   :host a {
     position: relative;
@@ -29,9 +33,7 @@ hyperbutton.styles = css`
     padding-bottom: calc(0.375em - 1px);
     padding-left: 0.75em;
 
-    /* outline: none; */
-
-    color: #000;
+    color: rgb(var(--starstuff-hyperbutton-color));
     font-size: 1.5rem;
     line-height: 1.5;
     white-space: nowrap;
@@ -60,10 +62,7 @@ hyperbutton.styles = css`
   }
 
   @media (prefers-color-scheme: dark) {
-    :host,
-    :host a {
-      color: #fff;
-    }
+    --starstuff-hyperbutton-color: 255, 255, 255;
 
     :host(:hover),
     :host(:focus) {

@@ -4,6 +4,7 @@ const testPathIgnorePatterns = [
   "/.docz/",
   "/coverage/",
   "/reports/",
+  "/storybook-static/",
 ];
 
 module.exports = {
