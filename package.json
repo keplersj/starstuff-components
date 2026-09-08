@@ -52,7 +52,7 @@
     "storybook-builder-vite": "0.1.23",
     "stylelint": "13.13.1",
     "stylelint-config-starstuff": "1.1.9",
-    "ts-jest": "28.0.6",
+    "ts-jest": "28.0.8",
     "typescript": "4.7.4",
     "vite": "3.0.0"
   },
